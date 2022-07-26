@@ -72,7 +72,7 @@ class Booking(webdriver.Chrome):
             adults_value_element = self.find_element('id','group_adults')
             adults_value = adults_value_element.get_attribute(
                 'value'
-            ) # Should give back the adults count
+            )
 
             if int(adults_value) == 1:
                 break
